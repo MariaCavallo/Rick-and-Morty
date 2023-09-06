@@ -1,4 +1,4 @@
-import { Container } from 'features/styles';
+import Container from '../styles/container.styles';
 import { NavDesktop } from './desktop';
 import { NavMobile } from './mobile';
 import { FC } from 'react';

@@ -2,7 +2,7 @@ import { FC } from 'react';
 import PaginationInfo from './pagination.types';
 import { useLanguage } from '../language';
 import PaginationWrapper from './pagination.styles';
-import Button from 'features/styles/button.styles';
+import Button from '../styles/button.styles';
 
 type PaginationProps = {
   p: PaginationInfo;

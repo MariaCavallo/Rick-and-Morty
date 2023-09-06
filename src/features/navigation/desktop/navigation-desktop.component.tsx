@@ -3,7 +3,7 @@ import { FC } from 'react';
 import { NavLink } from 'react-router-dom';
 import { useLanguage } from '../../language';
 import Nav from '../nav-container.styles';
-import { Container, Logo } from 'features/styles';
+import { Container, Logo } from '../../styles/index';
 
 const NavDesktop: FC = () => {
 

@@ -6,7 +6,7 @@ import { useNavigate } from 'react-router-dom';
 import { useLanguage } from '../language';
 import SearchBox from './search-box.styles';
 import SearchInput from './search-input.styles';
-import { IconButton } from 'features/styles';
+import IconButton from '../styles/icon-button.styles';
 
 const SearchBar: FC = () => {
   const locationsQuery = useAppSelector((state) => state.locations.query);

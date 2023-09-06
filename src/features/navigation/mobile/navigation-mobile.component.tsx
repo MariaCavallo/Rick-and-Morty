@@ -5,7 +5,7 @@ import { NavLink } from 'react-router-dom';
 import { useLanguage } from '../../language';
 import { useToggle } from '../../modal';
 import MobileNav from './mobile-nav.styles';
-import { Container, IconButton, Logo } from 'features/styles';
+import { Container, IconButton, Logo } from '../../styles/index';
 
 const NavMobile: FC = () => {
   

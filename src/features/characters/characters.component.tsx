@@ -16,12 +16,12 @@ const CharactersComponent: FC<CharactersComponentProps> = ({ rickIDDS }: Charact
   if (isLoading) return <div>{t('characters.loading')}</div>;
   if (error || !characters) return <div>{t('error')}</div>;
   
-  const charactersArray = Array.isArray(characters) ? characters : undefined;
+  const character = Array.isArray(characters) ? characters : [characters];
 
   return (
-    <CharacterGrid className={'characters'}>
-      {Array.isArray(charactersArray) &&
-        charactersArray.map((characters) => (
+    <CharacterGrid>
+      {Array.isArray(character) &&
+        character.map((characters) => (
         <CharacterCardComponent key={characters.id} character={characters} />
       ))}
     </CharacterGrid>
