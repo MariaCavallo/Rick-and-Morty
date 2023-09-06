@@ -2,6 +2,7 @@ import { FC } from 'react';
 import { Location } from '../../locations';
 import { useNavigate } from 'react-router-dom';
 import { useTracking } from '../../tracking/tracking.context';
+import Table from 'features/styles/table.styles';
 
 export type LocationsTableProps = {
   locations: Location[];
@@ -11,7 +12,7 @@ const LocationsTable: FC<LocationsTableProps> = ({ locations }: LocationsTablePr
   const navigate = useNavigate();
   const { trackEvent } = useTracking();
   return (
-    <table>
+    <Table>
       <thead>
         <tr>
           <th>ID</th>
@@ -37,7 +38,7 @@ const LocationsTable: FC<LocationsTableProps> = ({ locations }: LocationsTablePr
           </tr>
         ))}
       </tbody>
-    </table>
+    </Table>
   );
 };
 

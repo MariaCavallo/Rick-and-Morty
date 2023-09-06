@@ -1,9 +1,10 @@
 import { FC, PropsWithChildren } from 'react'
+import { CardImageWrapper } from './card.styles';
 
 const CardPicture: FC<PropsWithChildren<object>> = ({ children }: PropsWithChildren<object>) => (
-    <CardPicture>
+    <CardImageWrapper>
         {children}
-    </CardPicture>
+    </CardImageWrapper>
 );
 
 export default CardPicture;
