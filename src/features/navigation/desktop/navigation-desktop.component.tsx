@@ -13,7 +13,7 @@ const NavDesktop: FC = () => {
     <Nav justifyContent='space-between'>
       <Container style={{ width: 400 }}>
         <NavLinks to="/">
-          <Logo src={'/images/logo-dh.png'} alt={'Logo Digital House'} />
+          <Logo src={'/logo-dh.png'} alt={'Logo Digital House'} />
         </NavLinks>
         <NavLinks to="/">
           <h3>{t('navigation.home')}</h3>
